@@ -529,14 +529,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 1000, 1000, 3600, 10000 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 110, 100, 400, 1000 }
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 200, 200, 50, 500 }
+#define DEFAULT_MAX_FEEDRATE          { 2000, 2000, 500, 500 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -544,7 +544,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 50, 50, 40, 50 }
+#define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 120, 50 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -1018,7 +1018,7 @@
 
 // Manually set the home position. Leave these undefined for automatic settings.
 // For DELTA this is the top-center of the Cartesian print volume.
-#define MANUAL_X_HOME_POS 0
+//#define MANUAL_X_HOME_POS 0
 //#define MANUAL_Y_HOME_POS 0
 //#define MANUAL_Z_HOME_POS 0
 
@@ -1039,8 +1039,8 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (3*60)
-#define HOMING_FEEDRATE_Z  (60)
+#define HOMING_FEEDRATE_XY (10*60)
+#define HOMING_FEEDRATE_Z  (2*60)
 
 // @section calibrate
 
