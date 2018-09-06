@@ -143,10 +143,10 @@ It will auto heat up if the current temp doesn't reach the target.
 
 
 #set number of  "More" button 
->moreitem_pic_cnt:0
+>moreitem_pic_cnt:1
 
 #edit command for 1~7 "More" button,each command must be separated by semicolon ";"
->moreitem_button1_cmd:G28 X0;
+>moreitem_button1_cmd:M18 Z E;
 
 >moreitem_button2_cmd:G28 X0;
 
@@ -161,7 +161,7 @@ It will auto heat up if the current temp doesn't reach the target.
 >moreitem_button7_cmd:G28;
 
 #how many "More" button display on screen interface
->morefunc_cnt:1
+>morefunc_cnt:0
 
 #command setting on button1~6
 >morefunc1_cmd:M18 Z E;
@@ -202,4 +202,4 @@ It will auto heat up if the current temp doesn't reach the target.
 >cfg_BUTTON_3D_effects:0
 
 #屏幕翻转180°(0:不翻转,1:翻转)
->cfg_OVERTURN_180:1
+>cfg_OVERTURN_180:0
